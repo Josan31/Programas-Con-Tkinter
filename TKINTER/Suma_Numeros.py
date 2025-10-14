@@ -1,4 +1,4 @@
-import tkinter as tk    # 'as tk' es una convención que hace el código más llimpio y fácil de leer
+import tkinter as tk    # 'as tk' es una convención que hace el código más limpio y fácil de leer
 
 # ---------- FUNCIONES ----------
 
