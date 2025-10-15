@@ -53,6 +53,8 @@ tk.Button(ventana, text='C', width=22, height=2, font=("Arial", 14),    # Crea u
 
 ventana.mainloop()    # Se usa un bucle mainloop, sin él la ventana no se abrirá, o se cerrará inmediatamente 
 
+# comentario
+
 
 
 
