@@ -29,6 +29,7 @@ ventana.geometry("250x180")    # Tamaño
 
 # ---------- VARIABLE ----------
 
+# Guarda el valor seleccionado
 resultado = tk.StringVar()
 
 # ---------- WIDGETS ----------
