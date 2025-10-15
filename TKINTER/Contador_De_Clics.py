@@ -13,8 +13,11 @@ label_contador.pack(pady=10)
 
 # Función que aumenta el contador
 def aumentar():
+
     global contador  # usar la variable global
+
     contador += 1  # suma 1 al contador
+    
     label_contador.config(text=f"Clics: {contador}")  # actualiza el texto de la etiqueta
 
 # Botón que ejecuta la función
