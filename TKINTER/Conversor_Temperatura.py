@@ -8,9 +8,9 @@ ventana = tk.Tk()
 ventana.title("Conversor de Temperaturas")
 
 # Se crea un etiqueta para el campo donde el usuario pondrá los números
-tk.Label(ventana, text="Ingresa el valor:").grid(row=0, column=0, padx=10, pady=5)
+tk.Label(ventana, text="Ingresa el valor:").grid(row=0, column=0, padx=10, pady=5) # label es una etiqueta de texto
 
-# Obtiene el valor iingresado por el usuario
+# Obtiene el valor ingresado por el usuario
 entrada_valor = tk.Entry(ventana)
 entrada_valor.grid(row=0, column=1, padx=10, pady=5)
 
@@ -18,7 +18,7 @@ entrada_valor.grid(row=0, column=1, padx=10, pady=5)
 opcion = tk.StringVar(value="CtoF")  # valor por defecto
 
 # Creación de Botones de selección
-tk.Radiobutton(ventana, text="Celsius → Fahrenheit", variable=opcion, value="CtoF").grid(row=1, column=0, columnspan=2)    # Radiobutton nos permite seleccionar entre varias opciones.
+tk.Radiobutton(ventana, text="Celsius → Fahrenheit", variable=opcion, value="CtoF").grid(row=1, column=0, columnspan=2)    # Radiobutton nos permite seleccionar entre varias opciones
 tk.Radiobutton(ventana, text="Fahrenheit → Celsius", variable=opcion, value="FtoC").grid(row=2, column=0, columnspan=2)
 
 # Etiqueta para el resultado
@@ -45,7 +45,7 @@ def convertir():
     except ValueError:
         
         # Aparece un mensaje emergente en caso de error
-        messagebox.showerror("Error", "Por favor ingresa un número válido")
+        messagebox.showerror("Error", "Por favor ingresa un número válido.")
 
 # Botón para poder convertir y visualizar tu resultado
 tk.Button(ventana, text="Convertir", command=convertir).grid(row=3, column=0, columnspan=2, pady=10)
