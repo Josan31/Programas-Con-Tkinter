@@ -9,9 +9,9 @@ def sumar():
         numero2 = int(entrada2.get())
         
         # Realiza la suma entre los dos números
-        resultado.set (numero1 + numero2)
+        resultado.set (numero1 + numero2) # El set actualiza el valor de la variable resultado
    
-    # Si la enytrada no es un número
+    # Si la entrada no es un número
     except ValueError:
 
         resultado.set("Error")
@@ -30,7 +30,7 @@ ventana.geometry("250x180")    # Tamaño
 # ---------- VARIABLE ----------
 
 # Guarda el valor seleccionado
-resultado = tk.StringVar()
+resultado = tk.StringVar() # el StringVar es una variable especial de Tkinter que permite actualizar automáticamente los widgets vinculados a ella
 
 # ---------- WIDGETS ----------
 
@@ -39,7 +39,7 @@ tk.Label(ventana, text="Número 1: ").pack(pady=5)
 
 # Campo de entrada para el primer número
 entrada1 = tk.Entry(ventana)
-entrada1.pack()
+entrada1.pack() # .pack() es un gestor de geometría que organiza los widgets en bloques antes de colocarlos en la ventana principal
 
 # Etiqueta para el número 2
 tk.Label(ventana, text="Número 2: ").pack(pady=5)
