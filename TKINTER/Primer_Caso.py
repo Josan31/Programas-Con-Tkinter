@@ -1,6 +1,6 @@
 import tkinter as tk # Importa la biblioteca Tkinter
 
-ventana = tk.Tk()
+ventana = tk.Tk() # Crea la ventana principal
 ventana.title("Visualizador de productos")
 
 productos = [] # Lista para almacenar productos
